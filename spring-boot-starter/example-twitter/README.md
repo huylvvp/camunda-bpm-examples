@@ -8,7 +8,7 @@ The example contains:
 - custom forms to create and review the Tweet
 - creates on startup an admin user "kermit" (password: kermit)
 
-It also demonstrates the usage of `application.yaml` configuration file.
+It also demonstrates the usage of the `application.yaml` configuration file.
 
 ## How is it done
 
@@ -19,7 +19,7 @@ It also demonstrates the usage of `application.yaml` configuration file.
 <dependency>
  <groupId>org.camunda.bpm.springboot</groupId>
  <artifactId>camunda-bpm-spring-boot-starter-webapp</artifactId>
- <version>3.2.0</version>
+ <version>3.3.0</version>
 </dependency>
 ...
 ```

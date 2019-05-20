@@ -21,11 +21,11 @@ The example process looks like:
 
 ### Run it as JUnit Test  
 
-The JUnit test [CamundaSpringBootExampleApplicationTest](src/test/java/org/camunda/bpm/example/CamundaSpringBootExampleApplicationTest.java) starts the application and verify that it starts a process instance.
+The JUnit test [CamundaSpringBootExampleApplicationTest](src/test/java/org/camunda/bpm/example/CamundaSpringBootExampleApplicationTest.java) starts the application and verifies that a process instance is started.
 
 ## How it works
 
-Follow steps to create a basic setup for your Spring Boot application which embeds the Camunda process engine.
+Follow steps to create a basic setup for your Spring Boot application which embeds the Camunda Process Engine.
 
 Note that you can generate your project skeleton using the [Spring Initializr](https://start.spring.io/).
 
