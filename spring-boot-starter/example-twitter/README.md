@@ -40,7 +40,7 @@ public class TwitterServletProcessApplication {
 
 3. You can also put BPMN, CMMN and DMN files in your classpath, they will be automatically deployed and registered within the process application.
 
-4. You can configure your Spring Boot application using `application.yaml` file. All possible Camunda-specific configuration parameters are listed [here](https://stage.docs.camunda.org/manual/develop/user-guide/spring-boot-integration/configuration/)
+4. You can configure your Spring Boot application using `application.yaml` file. All possible Camunda-specific configuration parameters are listed [here](https://stage.docs.camunda.org/manual/7.11/user-guide/spring-boot-integration/configuration/)
 
 5. This example provides two implementations for posting a Tweet:
 * `TweetContentOfflineDelegate` (default) - will just print the tweet content on console
