@@ -27,7 +27,7 @@ See the [user guide](https://docs.camunda.org/manual/latest/user-guide/process-e
 
 # Before Starting
 
-Before starting, make sure to download the [Camunda BPM JBoss distribution](http://camunda.org/download/) and extract it to a folder. We will call this folder `$CAMUNDA_HOME` in the following explanations.
+Before starting, make sure to download the [Camunda BPM JBoss distribution](http://camunda.org/release/camunda-bpm/jboss/) and extract it to a folder. We will call this folder `$CAMUNDA_HOME` in the following explanations.
 
 
 # Configuring the Database
@@ -51,19 +51,19 @@ create schema TENANT2;
 Next, inside each schema, create the database tables. To achieve this, get the SQL create scripts
 from the jboss distribution from the `sql/create/` folder inside your distribution.
 
-Inside the h2 console, execute the create scripts (`h2_engine_7.2.0.sql` and
-`h2_identity_7.2.0.sql`) scripts after selecting the appropriate schema for the current connection:
+Inside the h2 console, execute the create scripts (`h2_engine_7.11.0.sql` and
+`h2_identity_7.11.0.sql`) scripts after selecting the appropriate schema for the current connection:
 
 ```sql
 set schema TENANT1;
 
-<<paste sql/create/h2_engine_7.2.0.sql here>>
-<<paste sql/create/h2_identity.2.0.sql here>>
+<<paste sql/create/h2_engine_7.11.0.sql here>>
+<<paste sql/create/h2_identity_7.11.0.sql here>>
 
 set schema TENANT2;
 
-<<paste sql/create/h2_engine_7.2.0.sql here>>
-<<paste sql/create/h2_identity.2.0.sql here>>
+<<paste sql/create/h2_engine_7.11.0.sql here>>
+<<paste sql/create/h2_identity_7.11.0.sql here>>
 ```
 
 The following screenshot illustrates how to create the tables inside the correct schema:
@@ -145,9 +145,7 @@ The approach of configuring multiple engines also allows you to differ engine co
 
 In this step, we describe a process application that deploys different processes for the two tenants. It also exposes a REST resource that returns a tenant's process definitions. To identify the tenant, we provide a user name in the REST request. In the implementation, we use CDI to transparently interact with the correct process engine based on the tenant identifier.
 
-{{< note >}}
 The following descriptions highlight the concepts related to implementing multi-tenancy but are not a step-by-step explanation to develop along. Instead, make sure to checkout the <a href="https://github.com/camunda/camunda-bpm-examples/tree/master/multi-tenancy/schema-isolation">code on github</a>. The code can be built and deployed to JBoss right away and contains all the snippets explained in the following sections.
-{{< /note >}}
 
 
 ## Set Up the Process Application
@@ -367,7 +365,7 @@ The test class [ProcessIntegrationTest](src/test/java/org/camunda/bpm/tutorial/m
 
 Follow the steps to run the test:
 
-* download the [Camunda BPM JBoss distribution](https://camunda.org/download/)
+* download the [Camunda BPM JBoss distribution](http://camunda.org/release/camunda-bpm/jboss/)
 * replace the `camunda-bpm-jboss-{version}/server/jboss-as-{version}/standalone/configuration/standalone.xml` with
   * [standalone.xml](standalone.xml) (two schemas - requires manual schema creation) or 
   * [standalone_test.xml](standalone_test.xml) (two databases - auto schema creation)
