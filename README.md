@@ -33,7 +33,6 @@ If you clone this repository, use the checkout commands to access the sources fo
 * [Cockpit](#cockpit-examples)
 * [Tasklist](#tasklist-examples)
 * [camunda Modeler (Eclipse)](#camunda-modeler-eclipse-plugin-examples)
-* [CMMN](#cmmn-examples)
 * [Multi-Tenancy](#multi-tenancy-examples)
 * [Spin](#spin-examples)
 * [DMN](#dmn-examples)
@@ -142,12 +141,6 @@ Hint: Any example using the JBoss 7 Camunda BPM distribution **must** use JDK 6/
 | ---------------------------------------------------------------------------|---------------------------|---------|
 | [Custom Task Simple](/modeler/custom-task-simple)                          | Plugin, Eclipse           | 2.3+    |
 | [Custom Task Advanced](/modeler/custom-task-advanced)                      | Plugin, Eclipse           | 2.3+    |
-
-### CMMN Examples
-
-| Name                                                                       |
-| ---------------------------------------------------------------------------|
-| [Case Manager UI](https://github.com/camunda/camunda-casemanager-ui) (External) |
 
 ### Cycle Examples
 
