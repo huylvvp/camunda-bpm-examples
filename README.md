@@ -193,6 +193,7 @@ Hint: Any example using the JBoss 7 Camunda BPM distribution **must** use JDK 7 
  | [REST API](spring-boot-starter/example-web)                | Spring boot with embedded engine and Webapps                               |  Spring Boot Starter, REST API |
  | [Autodeployment](spring-boot-starter/example-autodeployment) | Spring boot with embedded engine and Webapps                             |  Spring Boot Starter           |
  | [Twitter](spring-boot-starter/example-twitter)             | Spring boot with embedded engine and Webapps                               |  Spring Boot Starter, Webapps, Twitter  |
+ | [REST API DMN](spring-boot-starter/example-dmn-rest)       | Spring boot with embedded engine and Webapps                               |  Spring Boot Starter, REST API |
 
 
 ### Contribute!
