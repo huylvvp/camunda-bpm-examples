@@ -4,9 +4,6 @@ This example demonstrates how you can build Spring Boot Web application having f
 * Embedded Camunda engine accessible via REST
 * Process application and one Decision Definition deployed
 
-## Show me the important parts!
-
-
 
 ## How is it done
 
